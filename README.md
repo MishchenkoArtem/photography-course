@@ -1,1 +1,1 @@
-# photography-course
+# Photography Course

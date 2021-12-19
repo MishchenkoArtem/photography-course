@@ -1,0 +1,117 @@
+.photography {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "heading image"
+    "text image"
+    "button image";
+  margin: 0 auto;
+  max-width: 1440px;
+
+  &__heading {
+    grid-area: heading;
+    @include fonts (Roboto, normal, 400, 100px, 110px);
+    max-width: 624px;
+    margin: 0;
+    padding: 50px 0 0;
+  }
+
+  @media (max-width: 768px) {
+    &__heading {
+      padding-top: 40px;
+      justify-self: flex-start;
+    }
+  }
+
+  @media (max-width: 651px) {
+    &__heading {
+      padding-top: 14px;
+      font-size: 47px;
+      line-height: 56px;
+    }
+  }
+
+  &__text {
+    grid-area: text;
+    @include fonts (Roboto, normal, 400, 20px, 28px);
+    max-width: 469px;
+    margin: 0;
+    padding: 60px 0 70px;
+  }
+  
+  @media (max-width: 768px) {
+    &__text {
+      padding: 0 0 60px 0;
+      justify-self: flex-start;
+    }
+  }
+
+  @media (max-width: 651px) {
+    &__text {
+      padding: 0 0 30px 0;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__button {
+    grid-area: button;
+    @include fonts (Roboto, normal, 400, 18px, 28px);
+    max-width: 228px;
+    max-height: 49px;
+    background: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    border-radius: 99px;
+    cursor: pointer;
+    padding: 10px 68px;
+    margin: 0;
+  }
+
+  &__button:hover {
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    &__button {
+      margin-bottom: 40px;
+      justify-self: flex-start;
+    }
+  }
+
+  @media (max-width: 651px) {
+    &__button {
+      margin-bottom: 20px;
+      padding: 6px 48px;
+    }
+  }
+
+  &__image {
+    grid-area: image;
+    max-width: 642px;
+    margin: 0;
+    padding: 50px 0;
+    justify-self: flex-end;
+  }
+
+  @media (max-width: 1360px) {
+    &__image {
+      padding: 60px 0;
+      max-width: 688px;
+      width: 100%;
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .photography {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "heading"
+    "image"
+    "text"
+    "button";
+    justify-items: center;
+  }
+}

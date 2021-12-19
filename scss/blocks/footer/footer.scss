@@ -1,0 +1,86 @@
+.footer {
+  background-color: #DF2626;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &__components {
+    display: flex;
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    color: #fff;
+    max-width: 685px;
+    margin: 50px 0 0 50px;
+  }
+
+  &__arrow {
+    background-image: url("../images/arrow.svg");
+    width: 129px;
+    height: 95px;
+    margin: 60px 0 0 50px;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__input {
+    width: 348px;
+    hieght: 50px;
+    background: #fff;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px 0px 0px 8px;
+    padding: 13px 0 13px 20px;
+    margin: 120px 0 0 234px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.375px;
+    color: #000;
+  }
+
+  &__button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.375px;
+    width: 205px;
+    height: 54px;
+    background: #fff;
+    border: 2px solid #000;
+    border-left: none;
+    box-sizing: border-box;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    padding: 13px 61px 13px 60px;
+    margin: 120px 0 0 0;
+  }
+
+  &__button:hover {
+    font-weight: 500;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin: 86px 0 50px 50px;
+  }
+}
+

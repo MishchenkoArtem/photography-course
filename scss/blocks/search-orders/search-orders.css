@@ -1,0 +1,68 @@
+.search-orders {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.search-orders__container {
+  display: flex;
+}
+.search-orders__components {
+  display: flex;
+  flex-direction: column;
+}
+.search-orders__caption {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 50px 0 0 54px;
+  padding: 0;
+}
+.search-orders__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  max-width: 549px;
+  margin: 50px 0 106px 50px;
+}
+.search-orders__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 380px;
+  margin: 386px 0 148px 0px;
+}
+.search-orders__img {
+  background: no-repeat center/cover;
+  max-width: 648px;
+  max-height: 333px;
+  margin: 0 312px 50px 50px;
+}
+.search-orders__button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 228px;
+  height: 49px;
+  background: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  border-radius: 99px;
+  cursor: pointer;
+  padding: 10px 67px;
+  margin: 0;
+}
+.search-orders__button:hover {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=search-orders.css.map */
