@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курс по фотографии</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="body">
     <header class="header page-section">
@@ -20,31 +20,35 @@
         </nav>
     </header>
     <main>
-        <section class="photography page-section">
-            <h1 class="photography__heading">Курс по фотографии</h1>
-            <p class="photography__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
-            <button type="button" class="photography__button">Подробнее</button>
-            <img src="../images/winter-wood.jpg" alt="зимний сосновый лес" class="photography__image">
+        <section>
+            <article class="photography page-section">
+                <h1 class="photography__heading">Курс по фотографии</h1>
+                <p class="photography__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
+                <button type="button" class="photography__button">Подробнее</button>
+                <img src="images/winter-wood.jpg" alt="зимний сосновый лес" class="photography__image">
+            </article>
         </section>
-        <!-- <section class="composition">
-            <div class="composition__container">
-                <div class="composition__components">
+        <section class="composition page-section">
+            <article class="photography">
+                <div class="composition__box">
                     <p class="composition__caption">Композиция</p>
-                    <h2 class="composition__title">Изучите композицию</h2>
-                    <p class="composition__text">Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__span">снимке</span>.</p>
-                    <p class="composition__text">Изучите композицию интуитивную и какие-то определённые законы.</p>
-                    <button type="button" class="section__button">Записаться!</button>
+                    <h2 class="composition__heading">Изучите композицию</h2>
                 </div>
-                <img src="../images/the-road-in-the-pine-forest.jpg" alt="дорога в сосновом лесу" class="composition__img">
-            </div>
+                <div class="composition__box">
+                    <p class="composition__paragraph">Вы изучите гармоничное размещение всех элементов изображения наснимке.</p>
+                    <p class="composition__paragraph">Изучите композицию интуитивную и какие-то определённые законы.</p>
+                </div>
+                <img src="images/the-road-in-the-pine-forest.jpg" alt="дорога в сосновом лесу" class="composition__image">
+                <button type="button" class="composition__button">Записаться!</button>
+            </article>
             <div class="composition__container">
-                <p class="composition__paragraph">Првило третей, при котором нужно распологать объекты на пересечениях.</p>
-                <p class="composition__paragraph">Простота: убирай всё лишнее и кадрируй!</p>
-                <p class="composition__paragraph">Равновесие: уравновесь пятна объекта и фона.</p>
-                <p class="composition__paragraph">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
+                <p class="composition__text">Првило третей, при котором нужно распологать объекты на пересечениях.</p>
+                <p class="composition__text">Простота: убирай всё лишнее и кадрируй!</p>
+                <p class="composition__text">Равновесие: уравновесь пятна объекта и фона.</p>
+                <p class="composition__text">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
             </div>
         </section>
-        <section class="camera">
+        <!-- <section class="camera">
             <div class="camera__container">
                 <div class="camera__components">
                     <p class="camera__caption">камера</p>
