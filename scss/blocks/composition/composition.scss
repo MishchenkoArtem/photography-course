@@ -11,6 +11,10 @@
     margin-top: 50px;
     margin-bottom: 0;
     padding: 0;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 
   &__title {
@@ -18,6 +22,11 @@
     max-width: 403px;
     margin-top: 50px;
     margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
   }
 
   &__text {
@@ -25,10 +34,18 @@
     max-width: 366px;
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      max-width: 400px;
+    }
   }
 
   &__text:last-of-type {
     margin-bottom: 198px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
 
   &__accent {
@@ -44,12 +61,25 @@
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 9999px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -1;
+    grid-row-end: -6;
     max-width: 642px;
     max-height: 685px;
     margin: 50px 0 0 295px;
+
+    @media (max-width: 768px) {
+      max-width: 688px;
+      margin: 0 0 60px 0;
+    }
   }
 
   &__paragraph {
@@ -58,9 +88,21 @@
     margin-top: 100px;
     margin-bottom: 50px;
     margin-right: 56px;
+
+    @media (max-width: 768px) {
+      max-width: 688px;
+      margin: 0;
+      padding: 30px 0;
+      border-bottom: 1px solid #000;
+    }
   }
 
   &__paragraph:last-of-type {
     margin-right: 0;
+
+    @media (max-width: 768px) {
+      padding-bottom: 40px;
+      border-bottom: none;
+    }
   }
 }

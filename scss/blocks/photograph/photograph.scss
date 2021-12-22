@@ -9,6 +9,10 @@
     max-width: 624px;
     margin-top: 50px;
     margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 
   &__text {
@@ -16,6 +20,11 @@
     max-width: 469px;
     margin-top: 0;
     margin-bottom: 170px;
+
+    @media (max-width: 768px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
   }
 
   &__button {
@@ -28,11 +37,25 @@
     box-sizing: border-box;
     border-radius: 9999px;
     margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -1;
+    grid-row-end: -4;
     max-width: 642px;
     max-height: 685px;
     margin: 50px 0 50px 76px;
+
+    @media (max-width: 768px) {
+      max-width: 688px;
+      max-height: 594px;
+      margin: 0 auto;
+    }
   }
 }

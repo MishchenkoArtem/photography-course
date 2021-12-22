@@ -13,6 +13,10 @@
     min-width: 129px;
     min-height: 95px;
     margin: 60px 0 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__title {
@@ -20,12 +24,23 @@
     color: #fff;
     max-width: 685px;
     margin: 50px 0 120px 50px;
+
+    @media (max-width: 768px) {
+      font-size: 100px;
+      line-height: 100px;
+      max-width: 571px;
+      margin: 40px 0 190px 0;
+    }
   }
 
   &__fieldset {
     margin: 0 0 0 184px;
     padding: 0;
     border: none;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 
   &__input {
@@ -54,5 +69,9 @@
     @include fonts (Roboto, normal, 400, 15px, 24px);
     color: #fff;
     margin: 86px 0 50px;
+
+    @media (max-width: 768px) {
+      margin: 80px 0 40px 0;
+    }
   }
 }

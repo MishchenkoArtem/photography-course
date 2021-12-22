@@ -12,6 +12,10 @@
     margin-top: 50px;
     margin-bottom: 0;
     padding: 0;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 
   &__title {
@@ -20,6 +24,11 @@
     max-width: 617px;
     margin-top: 50px;
     margin-bottom: 359px;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
   }
 
   &__text {
@@ -31,9 +40,18 @@
   }
 
   &__image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -1;
+    grid-row-end: -4;
     max-width: 642px;
     max-height: 832px;
     margin: 50px 0 0 81px;
+
+    @media (max-width: 768px) {
+      max-width: 688px;
+      margin: 0 0 60px 0;
+    }
   }
 
   &__paragraph {
@@ -42,18 +60,35 @@
     max-width: 526px;
     margin: 180px 172px 60px 0;
 
-    &_type_indent {
+    @media (max-width: 768px) {
       margin-right: 0;
     }
 
-    &_type_name {
-      @include fonts (Roboto, normal, 400, 18px, 28px);
-      margin: 0 0 10px 0;
+    &_type_indent {
+      margin-right: 0;
     }
+  }
 
-    &_type_email {
-      @include fonts (Roboto, normal, 400, 14px, 24px);
-      margin: 0 0 50px 0;
+  &__paragraph-name {
+    color: #fff;
+    @include fonts (Roboto, normal, 400, 18px, 28px);
+    margin: 0 0 10px 0;
+  }
+
+  &__paragraph-email {
+    @include fonts (Roboto, normal, 400, 14px, 24px);
+    color: #fff;
+    margin: 0 0 50px 0;
+
+    @media (max-width: 768px) {
+      max-width: 688px;
+      margin: 0;
+      padding-bottom: 60px;
+      border-bottom: 1px solid #fff;
+
+      &_type_border {
+        border: none;
+      }
     }
   }
 }
