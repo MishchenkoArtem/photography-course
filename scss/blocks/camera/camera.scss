@@ -1,90 +1,59 @@
 .camera {
   background-color: #000;
-  display: flex;
-  flex-direction: column;
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
 
-  &__container {
-    display: flex;
-  }
-
-  &__components {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__caption {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+  &__heading {
+    @include fonts (Roboto, normal, 400, 18px, 28px);
     text-transform: uppercase;
     color: #fff;
-    margin: 50px 0 0 54px;
+    margin-top: 50px;
+    margin-bottom: 0;
     padding: 0;
   }
 
   &__title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 122px;
-    line-height: 122px;
+    @include fonts (Roboto, normal, 400, 122px, 122px);
     color: #fff;
     max-width: 617px;
-    margin: 50px 0 359px 50px;
+    margin-top: 50px;
+    margin-bottom: 359px;
   }
 
   &__text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    @include fonts (Roboto, normal, 400, 18px, 28px);
     text-transform: uppercase;
     color: #fff;
-    max-width: 400px;
-    margin: 0 0 0px 54px;
+    margin: 0;
+    padding: 0;
   }
 
-  &__img {
-    background: no-repeat center / cover;
+  &__image {
     max-width: 642px;
     max-height: 832px;
-    margin: 50px 0 180px 81px;
+    margin: 50px 0 0 81px;
   }
 
   &__paragraph {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 43px;
-    line-height: 43px;
+    @include fonts (Roboto, normal, 400, 43px, 43px);
     color: #fff;
     max-width: 526px;
-    margin: 0 122px 60px 50px;
-  }
+    margin: 180px 172px 60px 0;
 
-  &__paragraph-name {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #fff;
-    margin: 0 0 0 50px;
-    padding: 0;
-  }
+    &_type_indent {
+      margin-right: 0;
+    }
 
-  &__paragraph-email {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
-    margin: 10px 0 50px 50px;
-    padding: 0;
+    &_type_name {
+      @include fonts (Roboto, normal, 400, 18px, 28px);
+      margin: 0 0 10px 0;
+    }
+
+    &_type_email {
+      @include fonts (Roboto, normal, 400, 14px, 24px);
+      margin: 0 0 50px 0;
+    }
   }
 }

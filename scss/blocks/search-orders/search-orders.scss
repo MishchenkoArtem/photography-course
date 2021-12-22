@@ -1,74 +1,45 @@
 .search-orders {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
 
-  &__container {
-    display: flex;
-  }
-
-  &__components {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__caption {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+  &__heading {
+    @include fonts (Roboto, normal, 400, 18px, 28px);
     text-transform: uppercase;
-    margin: 50px 0 0 54px;
+    margin-top: 50px;
+    margin-bottom: 0;
     padding: 0;
   }
 
   &__title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 64px;
+    @include fonts (Roboto, normal, 400, 64px, 64px);
     max-width: 549px;
-    margin: 50px 0 106px 50px;
+    margin-top: 50px;
+    margin-bottom: 106px;
+  }
+
+  &__image {
+    max-width: 648px;
+    max-height: 333px;
+    margin-bottom: 50px;
   }
 
   &__text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    @include fonts (Roboto, normal, 400, 18px, 28px);
     max-width: 380px;
-    margin: 386px 0 148px 0px;
-  }
-
-  &__img {
-    background: no-repeat center / cover;
-    max-width: 648px;
-    max-height: 333px;
-    margin: 0 312px 50px 50px;
+    margin: 386px 0 148px 312px;
   }
 
   &__button {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    @include fonts (Roboto, normal, 400, 18px, 28px);
     max-width: 228px;
-    height: 49px;
-    background: #fff;
-    border: 2px solid #000;
+    max-height: 49px;
+    padding: 10px 63px;
+    background-color: #fff;
+    border: 2px solid #000000;
     box-sizing: border-box;
-    border-radius: 99px;
-    cursor: pointer;
-    padding: 10px 67px;
-    margin: 0;
-  }
-
-  &__button:hover {
-    font-weight: 500;
+    border-radius: 9999px;
+    margin: 0 0 50px 312px;
   }
 }
