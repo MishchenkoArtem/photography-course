@@ -8,16 +8,29 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="body">
-    <header class="header page-section">
-        <div class="header__image"></div>
-        <nav>
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="#">Композиция</a></li>
-                <li class="header__item"><a class="header__link" href="#">Камера</a></li>
-                <li class="header__item"><a class="header__link" href="#">Поиск заказов</a></li>
-            </ul>
+    <header class="header">
+        <section class="header header__menu-main page-section">
+            <div class="header__image"></div>
             <button class="header__button"></button>
-        </nav>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#">Композиция</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Камера</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Поиск заказов</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header header__menu-active page-section">
+            <div class="header__image header__image_type_active"></div>
+            <nav>
+                <ul class="header__list-active">
+                    <li class="header__item-active"><a class="header__link" href="#">Композиция</a></li>
+                    <li class="header__item-active"><a class="header__link" href="#">Камера</a></li>
+                    <li class="header__item-active"><a class="header__link" href="#">Поиск заказов</a></li>
+                </ul>
+            </nav>
+            <div class="header__button-close"></div>
+        </section>
     </header>
     <main>
         <section class="photograph page-section">
@@ -33,7 +46,7 @@
                 <h2 class="composition__heading">Композиция</h2>
                 <h3 class="composition__title">Изучите композицию</h3>
                 <img src="./images/the-road-in-the-pine-forest.jpg" alt="Дорога в сосновом лесу" class="composition__image">
-                <p class="composition__text">Вы изучите гармоничное размещение всех элементов изображения на <span class="photograph__accent">снимке.</span></p>
+                <p class="composition__text">Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__accent">снимке.</span></p>
                 <p class="composition__text">Изучите композицию интуитивную и&nbsp;какие-то определённые законы.</p>
                 <button class="composition__button">Записаться!</button>
             </div>
@@ -53,12 +66,12 @@
             </div>
             <div class="wrapper__container">
                 <div class="wrapper__column">
-                    <p class="camera__paragraph">на&nbsp;этом&nbsp;курсе&nbsp;я&nbsp;научился пользоватся камерой, как настоящий профессионал!</p>
+                    <p class="camera__paragraph">на этом курсе я научился пользоватся камерой, как настоящий профессионал!</p>
                     <p class="camera__paragraph-name">Питер, водитель.</p>
                     <p class="camera__paragraph-email">@piter123</p>
                 </div>
                 <div class="wrapper__column">
-                    <p class="camera__paragraph camera__paragraph_type_indent">супер крутой курс! на&nbsp;части про фотики я&nbsp;стал разбираться в&nbsp;предназначении&nbsp;кнопок</p>
+                    <p class="camera__paragraph camera__paragraph_type_indent">супер крутой курс! на части про фотики я стал разбираться в предназначении кнопок</p>
                     <p class="camera__paragraph-name">Джон, спортсмен.</p>
                     <p class="camera__paragraph-email camera__paragraph-email_type_border">@john_sport</p>
                 </div>
@@ -86,7 +99,7 @@
         <div class="wrapper__row">
             <fieldset class="footer__fieldset">
                 <label>
-                    <input class="footer__input">
+                    <input class="footer__input" placeholder="Ваша почта">
                 </label>
             </fieldset>
             <button class="footer__button">Записаться!</button>

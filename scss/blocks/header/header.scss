@@ -1,31 +1,69 @@
 .header {
     background-color: #DF2626;
     max-width: 1440px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    &__image {
-        background-image: url("../images/header-img.svg");
-        background-size: cover;
-        box-sizing: border-box;
-        cursor: pointer;
-        min-width: 40px;
-        min-height: 40px;
-        margin: 0;
-    }
+    margin: 0 auto;
 
-    @media (max-width: 768px) {
-        &__image {
-            min-width: 36px;
-            min-height: 36px;
+    &__menu-main {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        max-width: 1440px;
+        width: 100%;
+        min-width: 320px;
+
+        &_type_disabled {
+            display: none;
         }
     }
 
-    @media (max-width: 427px) {
-        &__image {
-            min-width: 30px;
-            min-height: 30px;
+    &__menu-active {
+        display: none;
+        grid-template-columns: 1fr 50px;
+        max-width: 843px;
+        width: 100%;
+        min-width: 320px;
+
+        @media (min-width: 843px) {
+            display: none;
+        }
+
+        @media (max-width: 670px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+        }
+
+        &_type_active {
+            display: grid;
+        }
+    }
+    
+    &__image {
+        background-image: url("../../../images/header-img.svg");
+        background-size: cover;
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        align-self: center;
+
+        &_type_active {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            margin: 21px 0 0;
+
+            @media (min-width: 671px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 36px;
+            height: 36px;
+        }
+
+        @media (max-width: 670px) {
+            width: 30px;
+            height: 30px;
         }
     }
 
@@ -48,11 +86,29 @@
         list-style: none;
         padding: 30px 0;
         margin: 0;
+
+        @media (max-width: 843px) {
+            display: none;
+        }
     }
 
-    @media (max-width: 768px) {
-        &__list {
+    &__list-active {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 30px 0;
+        margin: 0;
+
+        @media (min-width: 843px) {
             display: none;
+        }
+
+        @media (max-width: 670px) {
+            flex-direction: column;
+            align-items: center;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            padding: 0;
         }
     }
 
@@ -62,6 +118,20 @@
 
     &__item:last-child {
         margin-right: 0;
+    }
+
+    &__item-active {
+        padding: 0 40px 0 0;
+        @media (max-width: 670px) {
+            padding: 0 0 12px;
+        }
+    }
+
+    &__item-active:last-of-type {
+        padding: 0;
+        @media (max-width: 670px) {
+            padding: 0 0 20px;
+        }
     }
 
     &__link {
@@ -76,26 +146,40 @@
     }
 
     &__button {
-        background-image: url("../images/burger.svg");
+        background-image: url("../../../images/burger.svg");
         background-size: cover;
         background-color: transparent;
         box-sizing: border-box;
         border: none;
-        min-width: 32px;
-        min-height: 20px;
+        width: 32px;
+        height: 20px;
         padding: 0;
         margin: 34px 0 30px;
-    }
+        justify-self: flex-end;
 
-    @media (min-width: 769px) {
-        &__button {
+        @media (min-width: 844px) {
             display: none;
+        }
+
+        @media (max-width: 670px) {
+            margin: 26px 0 24px;
         }
     }
 
-    @media (max-width: 427px) {
-        &__button {
-            margin: 26px 0 24px;
+    &__button-close {
+        background-image: url("../../../images/button-close.svg");
+        background-size: cover;
+        background-color: transparent;
+        box-sizing: border-box;
+        width: 27px;
+        height: 27px;
+        border: none;
+        align-self: center;
+        justify-self: flex-end;
+
+        @media (max-width: 670px) {
+            grid-row-start: 1;
+            grid-row-end: 2;
         }
     }
 }

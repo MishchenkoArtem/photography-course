@@ -8,35 +8,66 @@
   &__heading {
     @include fonts (Roboto, normal, 400, 18px, 28px);
     text-transform: uppercase;
-    color: #fff;
-    margin-top: 50px;
-    margin-bottom: 0;
+    color: $cameraColorText;
+    margin: 50px 0 0;
     padding: 0;
 
+    @media (max-width: 1370px) {
+      margin: 40px auto 0;
+    }
+
     @media (max-width: 768px) {
-      margin-top: 40px;
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(14px, 20px);
+      padding-top: 20px;
+      border-top: 1px solid #fff;
     }
   }
 
   &__title {
     @include fonts (Roboto, normal, 400, 122px, 122px);
-    color: #fff;
+    color: $cameraColorText;
     max-width: 617px;
-    margin-top: 50px;
-    margin-bottom: 359px;
+    width: 100%;
+    margin: 50px 0 359px;
+
+    @media (max-width: 1370px) {
+      margin: 40px auto 60px;
+      text-align: center;
+    }
 
     @media (max-width: 768px) {
-      margin-top: 40px;
-      margin-bottom: 60px;
+      margin: 40px 0 60px;
+      text-align: left;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(48px, 56px);
+      margin: 30px 0 60px;
     }
   }
 
   &__text {
     @include fonts (Roboto, normal, 400, 18px, 28px);
     text-transform: uppercase;
-    color: #fff;
+    color: $cameraColorText;
     margin: 0;
     padding: 0;
+
+    @media (max-width: 1370px) {
+      margin: 0 auto 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0 30px;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(14px, 20px);
+    }
   }
 
   &__image {
@@ -46,22 +77,40 @@
     grid-row-end: -4;
     max-width: 642px;
     max-height: 832px;
-    margin: 50px 0 0 81px;
+    margin: 50px 0 0;
+    justify-self: right;
+
+    @media (max-width: 1370px) {
+      margin: 0 auto 60px;
+    }
 
     @media (max-width: 768px) {
       max-width: 688px;
-      margin: 0 0 60px 0;
+      max-height: 656px;
+      margin: 0 auto 60px;
+    }
+
+    @media (max-width: 670px) {
+      max-width: 280px;
+      max-height: 268px;
     }
   }
 
   &__paragraph {
     @include fonts (Roboto, normal, 400, 43px, 43px);
-    color: #fff;
+    color: $cameraColorText;
     max-width: 526px;
     margin: 180px 172px 60px 0;
 
     @media (max-width: 768px) {
       margin-right: 0;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(24px, 26px);
+      max-width: 280px;
+      margin: 30px 0;
+
     }
 
     &_type_indent {
@@ -70,14 +119,19 @@
   }
 
   &__paragraph-name {
-    color: #fff;
+    color: $cameraColorText;
     @include fonts (Roboto, normal, 400, 18px, 28px);
     margin: 0 0 10px 0;
+    
+    @media (max-width:670px) {
+      @include fonts-mobil(14px, 20px);
+      margin: 0 0 6px 0;
+    }
   }
 
   &__paragraph-email {
     @include fonts (Roboto, normal, 400, 14px, 24px);
-    color: #fff;
+    color: $cameraColorText;
     margin: 0 0 50px 0;
 
     @media (max-width: 768px) {
@@ -89,6 +143,11 @@
       &_type_border {
         border: none;
       }
+    }
+
+    @media (max-width:670px) {
+      @include fonts-mobil(12px, 12px);
+      padding-bottom: 30px;
     }
   }
 }

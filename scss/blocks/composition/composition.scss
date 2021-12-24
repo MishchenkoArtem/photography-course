@@ -8,48 +8,84 @@
   &__heading {
     @include fonts (Roboto, normal, 400, 18px, 28px);
     text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin: 50px 0 0;
     padding: 0;
 
+    @media (max-width: 1370px) {
+      margin: 40px auto 0;
+    }
+
     @media (max-width: 768px) {
-      margin-top: 40px;
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(14px, 20px);
+      padding-top: 20px;
+      border-top: 1px solid #000;
     }
   }
 
   &__title {
     @include fonts (Roboto, normal, 400, 64px, 64px);
     max-width: 403px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px 0 100px;
+
+    @media (max-width: 1370px) {
+      margin: 40px auto 60px;
+      text-align: center;
+    }
 
     @media (max-width: 768px) {
-      margin-top: 40px;
-      margin-bottom: 60px;
+      margin: 40px 0 60px;
+      text-align: left;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(30px, 38px);
+      margin: 30px 0 60px;
     }
   }
 
   &__text {
     @include fonts (Roboto, normal, 400, 18px, 28px);
     max-width: 366px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
+
+    @media (max-width: 1370px) {
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
 
     @media (max-width: 768px) {
       max-width: 400px;
+      margin: 0 0 20px;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(14px, 18px);
+      margin: 0 0 36px;
     }
   }
 
   &__text:last-of-type {
-    margin-bottom: 198px;
+    margin: 0 0 198px;
+
+    @media (max-width: 1370px) {
+      margin: 0 auto 60px;
+    }
 
     @media (max-width: 768px) {
-      margin-bottom: 60px;
+      margin: 0 0 60px;
+    }
+
+    @media (max-width: 670px) {
+      margin: 0 0 30px;
     }
   }
 
   &__accent {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   &__button {
@@ -62,9 +98,26 @@
     box-sizing: border-box;
     border-radius: 9999px;
 
-    @media (max-width: 768px) {
-      margin-bottom: 50px;
+    @media (max-width: 1370px) {
+      margin: 0 auto 50px;
     }
+
+    @media (max-width: 768px) {
+      margin: 0 0 50px;
+    }
+
+    @media (max-width: 670px) {
+      max-width: 169px;
+      max-height: 40px;
+      padding: 5px 44px;
+      @include fonts-mobil(14px, 28px);
+      margin: 0 0 66px;
+    }
+  }
+
+  &__button:hover {
+    font-weight: 500;
+    cursor: pointer;
   }
 
   &__image {
@@ -73,35 +126,55 @@
     grid-row-start: -1;
     grid-row-end: -6;
     max-width: 642px;
+    width: 100%;
     max-height: 685px;
-    margin: 50px 0 0 295px;
+    margin: 50px 0 0;
+    justify-self: right;
+
+    @media (max-width: 1370px) {
+      max-width: 688px;
+      margin: 0 auto 60px;
+    }
 
     @media (max-width: 768px) {
-      max-width: 688px;
-      margin: 0 0 60px 0;
+      margin: 0 auto 60px;
+    }
+
+    @media (max-width: 670px) {
+      max-width: 280px;
+      max-height: 278px;
     }
   }
 
   &__paragraph {
     @include fonts (Roboto, normal, 400, 18px, 28px);
     max-width: 291px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-right: 56px;
+    margin: 100px 56px 50px 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1370px) {
       max-width: 688px;
       margin: 0;
       padding: 30px 0;
       border-bottom: 1px solid #000;
+    }
+
+    @media (max-width: 670px) {
+      @include fonts-mobil(14px, 18px);
+      padding: 14px 0;
+      max-width: 278px;
     }
   }
 
   &__paragraph:last-of-type {
     margin-right: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1370px) {
       padding-bottom: 40px;
+      border-bottom: none;
+    }
+
+    @media (max-width: 670px) {
+      padding-bottom: 20px;
       border-bottom: none;
     }
   }

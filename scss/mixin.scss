@@ -5,3 +5,8 @@
   font-size: $size;
   line-height: $line;
 }
+
+@mixin fonts-mobil ($size, $line) {
+  font-size: $size;
+  line-height: $line;
+}
