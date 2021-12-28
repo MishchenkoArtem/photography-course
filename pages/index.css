@@ -6,39 +6,37 @@
 @font-face {
   font-family: "Roboto";
   font-weight: 500;
-  src: url(../../vendor/fonts/roboto-500.woff2) format("woff2");
+  src: url("../../vendor/fonts/roboto-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 700;
-  src: url(../../vendor/fonts/roboto-700.woff2) format("woff2");
+  src: url("../../vendor/fonts/roboto-700.woff2") format("woff2");
 }
-.body {
-  font-family: "Roboto", "Arial", serif;
+.page {
+  font-family: "Roboto", "Arial", sans-serif;
   margin: 0 auto;
   padding: 0;
 }
-
-.page-section {
+.page__section {
   max-width: 1340px;
   box-sizing: border-box;
   padding: 0 50px;
   margin: 0 auto;
 }
-
 @media (max-width: 768px) {
-  .page-section {
+  .page__section {
     padding: 0 40px;
   }
 }
 @media (max-width: 670px) {
-  .page-section {
+  .page__section {
     padding: 0 20px;
   }
 }
+
 .header {
   background-color: #DF2626;
-  max-width: 1440px;
   margin: 0 auto;
 }
 .header__menu-main {
@@ -188,7 +186,6 @@
   background-size: cover;
   background-color: transparent;
   box-sizing: border-box;
-  border: none;
   width: 32px;
   height: 20px;
   padding: 0;
@@ -223,37 +220,17 @@
   }
 }
 
-.wrapper {
+.photograph {
+  margin: 0 auto;
+  max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 1370px) {
-  .wrapper {
+  .photograph {
     display: flex;
     flex-direction: column;
   }
-}
-.wrapper__container {
-  display: flex;
-}
-@media (max-width: 1370px) {
-  .wrapper__container {
-    flex-direction: column;
-  }
-}
-.wrapper__column {
-  display: flex;
-  flex-direction: column;
-}
-.wrapper__row {
-  display: flex;
-}
-
-.photograph {
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
-  margin: 0 auto;
 }
 .photograph__title {
   font-family: Roboto;
@@ -317,14 +294,15 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  text-decoration: none;
+  color: #000;
   max-width: 228px;
   max-height: 49px;
-  padding: 10px 68px;
-  background-color: #fff;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   box-sizing: border-box;
-  border-radius: 9999px;
+  border-radius: 99px;
   margin: 0 0 50px;
+  padding: 10px 68px;
 }
 @media (max-width: 1370px) {
   .photograph__button {
@@ -383,10 +361,18 @@
 
 .composition {
   background-color: #FFCE00;
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
   margin: 0 auto;
+}
+.composition__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1440px;
+}
+@media (max-width: 1370px) {
+  .composition__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .composition__heading {
   font-family: Roboto;
@@ -412,8 +398,8 @@
   .composition__heading {
     font-size: 14px;
     line-height: 20px;
-    padding-top: 20px;
     border-top: 1px solid #000;
+    padding-top: 20px;
   }
 }
 .composition__title {
@@ -503,7 +489,7 @@
   max-height: 49px;
   padding: 10px 63px;
   background-color: #fff;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   box-sizing: border-box;
   border-radius: 9999px;
 }
@@ -559,6 +545,16 @@
     max-height: 278px;
   }
 }
+.composition__container {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+@media (max-width: 1370px) {
+  .composition__container {
+    flex-direction: column;
+  }
+}
 .composition__paragraph {
   font-family: Roboto;
   font-style: normal;
@@ -602,10 +598,18 @@
 
 .camera {
   background-color: #000;
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
   margin: 0 auto;
+}
+.camera__wrapper {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 1370px) {
+  .camera__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .camera__heading {
   font-family: Roboto;
@@ -712,7 +716,7 @@
   .camera__image {
     max-width: 688px;
     max-height: 656px;
-    margin: 0 auto 60px;
+    margin: 0 0 60px;
   }
 }
 @media (max-width: 670px) {
@@ -725,10 +729,10 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  font-size: 43px;
-  line-height: 43px;
+  font-size: 41px;
+  line-height: 42px;
   color: #fff;
-  max-width: 526px;
+  max-width: 520px;
   margin: 180px 172px 60px 0;
 }
 @media (max-width: 768px) {
@@ -792,10 +796,18 @@
 }
 
 .search-orders {
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
   margin: 0 auto;
+}
+.search-orders__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1440px;
+}
+@media (max-width: 1370px) {
+  .search-orders__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .search-orders__heading {
   font-family: Roboto;
@@ -831,6 +843,8 @@
   font-weight: 400;
   font-size: 64px;
   line-height: 64px;
+  grid-column-start: 1;
+  grid-column-end: 2;
   max-width: 549px;
   margin: 50px 0 106px;
 }
@@ -852,6 +866,8 @@
   }
 }
 .search-orders__image {
+  grid-column-start: 1;
+  grid-column-end: 2;
   max-width: 648px;
   max-height: 333px;
   margin: 0 0 50px;
@@ -873,6 +889,13 @@
     max-height: 147px;
   }
 }
+@media (max-width: 1370px) {
+  .search-orders__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .search-orders__text {
   font-family: Roboto;
   font-style: normal;
@@ -880,11 +903,10 @@
   font-size: 18px;
   line-height: 28px;
   max-width: 380px;
-  margin: 386px 0 148px 312px;
+  margin: 30px 0 0 290px;
 }
 @media (max-width: 1370px) {
   .search-orders__text {
-    max-width: 380px;
     margin: 0 auto 60px;
   }
 }
@@ -909,11 +931,13 @@
   max-width: 228px;
   max-height: 49px;
   padding: 10px 63px;
-  background-color: #fff;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   box-sizing: border-box;
-  border-radius: 9999px;
-  margin: 0 0 50px 312px;
+  border-radius: 99px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  margin: 145px 0 0 290px;
 }
 @media (max-width: 1370px) {
   .search-orders__button {
@@ -942,12 +966,15 @@
 
 .footer {
   background-color: #DF2626;
+  margin: 0 auto;
+}
+.footer__wrapper {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
-  margin: 0 auto;
+}
+.footer__row {
+  display: flex;
 }
 .footer__image {
   background-image: url("../../../images/arrow.svg");

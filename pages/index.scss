@@ -1,10 +1,8 @@
-@import "../scss/variable";
+@import "../scss/variable.scss";
 @import "../scss/mixin.scss";
 @import "../vendor/fonts/fonts.scss";
-@import "../scss/blocks/body/body.scss";
-@import "../scss/blocks/page-section/page-section.scss";
+@import "../scss/blocks/page/page.scss";
 @import "../scss/blocks/header/header.scss";
-@import "../scss/blocks/wrapper/wrapper.scss";
 @import "../scss/blocks/photograph/photograph.scss";
 @import "../scss/blocks/composition/composition.scss";
 @import "../scss/blocks/camera/camera.scss";

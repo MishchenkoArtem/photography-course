@@ -1,9 +1,17 @@
 .composition {
   background-color: #FFCE00;
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
   margin: 0 auto;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1440px;
+
+    @media (max-width: $laptopSize) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   &__heading {
     @include fonts (Roboto, normal, 400, 18px, 28px);
@@ -11,18 +19,18 @@
     margin: 50px 0 0;
     padding: 0;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       margin: 40px auto 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $tabletSize) {
       margin: 40px 0 0;
     }
 
-    @media (max-width: 670px) {
-      @include fonts-mobil(14px, 20px);
-      padding-top: 20px;
+    @media (max-width: $mobileSize) {
+      @include fonts-mobil (14px, 20px);
       border-top: 1px solid #000;
+      padding-top: 20px;
     }
   }
 
@@ -31,18 +39,18 @@
     max-width: 403px;
     margin: 50px 0 100px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       margin: 40px auto 60px;
       text-align: center;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $tabletSize) {
       margin: 40px 0 60px;
       text-align: left;
     }
 
-    @media (max-width: 670px) {
-      @include fonts-mobil(30px, 38px);
+    @media (max-width: $mobileSize) {
+      @include fonts-mobil (30px, 38px);
       margin: 30px 0 60px;
     }
   }
@@ -52,18 +60,18 @@
     max-width: 366px;
     margin: 0 0 20px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       max-width: 400px;
       margin: 0 auto 20px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $tabletSize) {
       max-width: 400px;
       margin: 0 0 20px;
     }
 
-    @media (max-width: 670px) {
-      @include fonts-mobil(14px, 18px);
+    @media (max-width: $mobileSize) {
+      @include fonts-mobil (14px, 18px);
       margin: 0 0 36px;
     }
   }
@@ -71,15 +79,15 @@
   &__text:last-of-type {
     margin: 0 0 198px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       margin: 0 auto 60px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $tabletSize) {
       margin: 0 0 60px;
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: $mobileSize) {
       margin: 0 0 30px;
     }
   }
@@ -94,23 +102,23 @@
     max-height: 49px;
     padding: 10px 63px;
     background-color: #fff;
-    border: 2px solid #000000;
+    border: $buttonBorder;
     box-sizing: border-box;
     border-radius: 9999px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       margin: 0 auto 50px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $tabletSize) {
       margin: 0 0 50px;
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: $mobileSize) {
       max-width: 169px;
       max-height: 40px;
       padding: 5px 44px;
-      @include fonts-mobil(14px, 28px);
+      @include fonts-mobil (14px, 28px);
       margin: 0 0 66px;
     }
   }
@@ -131,18 +139,28 @@
     margin: 50px 0 0;
     justify-self: right;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       max-width: 688px;
       margin: 0 auto 60px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $tabletSize) {
       margin: 0 auto 60px;
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: $mobileSize) {
       max-width: 280px;
       max-height: 278px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @media (max-width: $laptopSize) {
+      flex-direction: column;
     }
   }
 
@@ -151,15 +169,15 @@
     max-width: 291px;
     margin: 100px 56px 50px 0;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       max-width: 688px;
       margin: 0;
       padding: 30px 0;
       border-bottom: 1px solid #000;
     }
 
-    @media (max-width: 670px) {
-      @include fonts-mobil(14px, 18px);
+    @media (max-width: $mobileSize) {
+      @include fonts-mobil (14px, 18px);
       padding: 14px 0;
       max-width: 278px;
     }
@@ -168,12 +186,12 @@
   &__paragraph:last-of-type {
     margin-right: 0;
 
-    @media (max-width: 1370px) {
+    @media (max-width: $laptopSize) {
       padding-bottom: 40px;
       border-bottom: none;
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: $mobileSize) {
       padding-bottom: 20px;
       border-bottom: none;
     }

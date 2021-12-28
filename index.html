@@ -7,11 +7,11 @@
     <title>Курс по фотографии</title>
     <link rel="stylesheet" href="./pages/index.css">
 </head>
-<body class="body">
+<body class="page">
     <header class="header">
-        <section class="header header__menu-main page-section">
+        <section class="header__menu-main page__section">
             <div class="header__image"></div>
-            <button class="header__button"></button>
+            <a class="header__button"></a>
             <nav>
                 <ul class="header__list">
                     <li class="header__item"><a class="header__link" href="#">Композиция</a></li>
@@ -20,7 +20,7 @@
                 </ul>
             </nav>
         </section>
-        <section class="header header__menu-active page-section">
+        <section class="header__menu-active page__section">
             <div class="header__image header__image_type_active"></div>
             <nav>
                 <ul class="header__list-active">
@@ -33,78 +33,74 @@
         </section>
     </header>
     <main>
-        <section class="photograph page-section">
-            <div class="wrapper">
-                <h1 class="photograph__title">Курс по фотографии</h1>
-                <img src="./images/winter-wood.jpg" alt="Туманный сосновый лес" class="photograph__image">
-                <p class="photograph__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
-                <button class="photograph__button">Подробнее</button>
-            </div>
+        <section class="photograph page__section">
+            <h1 class="photograph__title">Курс по фотографии</h1>
+            <img src="./images/winter-wood.jpg" alt="Туманный сосновый лес" class="photograph__image">
+            <p class="photograph__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
+            <a href="#" class="photograph__button">Подробнее</a>
         </section>
-        <section class="composition page-section">
-            <div class="wrapper">
+        <section class="composition">
+            <div class="composition__wrapper page__section">
                 <h2 class="composition__heading">Композиция</h2>
                 <h3 class="composition__title">Изучите композицию</h3>
                 <img src="./images/the-road-in-the-pine-forest.jpg" alt="Дорога в сосновом лесу" class="composition__image">
                 <p class="composition__text">Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__accent">снимке.</span></p>
                 <p class="composition__text">Изучите композицию интуитивную и&nbsp;какие-то определённые законы.</p>
-                <button class="composition__button">Записаться!</button>
-            </div>
-            <div class="wrapper__container">
-                <p class="composition__paragraph">Првило третей, при котором нужно распологать объекты на пересечениях.</p>
-                <p class="composition__paragraph">Простота: убирай всё лишнее и кадрируй!</p>
-                <p class="composition__paragraph">Равновесие: уравновесь пятна объекта и фона.</p>
-                <p class="composition__paragraph">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
+                <a class="composition__button">Записаться!</a>
+                <div class="composition__container">
+                    <p class="composition__paragraph">Првило третей, при котором нужно распологать объекты на пересечениях.</p>
+                    <p class="composition__paragraph">Простота: убирай всё лишнее и кадрируй!</p>
+                    <p class="composition__paragraph">Равновесие: уравновесь пятна объекта и фона.</p>
+                    <p class="composition__paragraph">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
+                </div>
             </div>
         </section>
-        <section class="camera page-section">
-            <div class="wrapper">
+        <section class="camera">
+            <div class="camera__wrapper page__section">
                 <h2 class="camera__heading">камера</h2>
                 <h3 class="camera__title">Настройка Съемка Обработка</h3>
-                <img src="./images/road-in-the-forest.jpg" alt="" class="camera__image">
+                <img src="./images/road-in-the-forest.jpg" alt="лес" class="camera__image">
                 <p class="camera__text">отзывы про часть о камерах:</p>
-            </div>
-            <div class="wrapper__container">
-                <div class="wrapper__column">
-                    <p class="camera__paragraph">на этом курсе я научился пользоватся камерой, как настоящий профессионал!</p>
+                <div>
+                    <p class="camera__paragraph">на&nbsp;этом&nbsp;курсе&nbsp;я научился пользоватся камерой, как&nbsp;настоящий профессионал!</p>
                     <p class="camera__paragraph-name">Питер, водитель.</p>
                     <p class="camera__paragraph-email">@piter123</p>
                 </div>
-                <div class="wrapper__column">
-                    <p class="camera__paragraph camera__paragraph_type_indent">супер крутой курс! на части про фотики я стал разбираться в предназначении кнопок</p>
+                <div>
+                    <p class="camera__paragraph camera__paragraph_type_indent">супер крутой курс! на&nbsp;части&nbsp;про&nbsp;фотики я стал разбираться в предназначении кнопок</p>
                     <p class="camera__paragraph-name">Джон, спортсмен.</p>
                     <p class="camera__paragraph-email camera__paragraph-email_type_border">@john_sport</p>
                 </div>
             </div>
         </section>
-        <section class="search-orders page-section">
-            <div class="wrapper__container">
-                <div class="wrapper__column">
-                    <h2 class="search-orders__heading">поиск заказов</h2>
-                    <h3 class="search-orders__title">Научим находить заказы!</h3>
-                    <img src="./images/tree-trunk.jpg" alt="Ствол дерева" class="search-orders__image">
-                </div>
-                <div class="wrapper__column">
+        <section class="search-orders">
+            <div class="search-orders__wrapper page__section">
+                <h2 class="search-orders__heading">поиск заказов</h2>
+                <h3 class="search-orders__title">Научим находить заказы!</h3>
+                <img src="./images/tree-trunk.jpg" alt="Ствол дерева" class="search-orders__image">
+                <div class="search-orders__container">
                     <p class="search-orders__text">Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.</p>
-                    <button class="search-orders__button">Записаться!</button>
+                    <button type="button" class="search-orders__button">Записаться!</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer page-section">
-        <div class="wrapper__row">
-            <div class="footer__image"></div>
-            <h2 class="footer__title">Записаться! Сейчас!</h2>
+    <footer class="footer">
+        <div class="footer__wrapper page__section">
+            <div class="footer__row">
+                <div class="footer__image"></div>
+                <h2 class="footer__title">Записаться! Сейчас!</h2>
+            </div>
+            <div class="footer__row">
+                <fieldset class="footer__fieldset">
+                    <label>
+                        <input class="footer__input" placeholder="Ваша почта">
+                    </label>
+                </fieldset>
+                <button type="submit" class="footer__button">Записаться!</button>
+            </div>
+            <p class="footer__author">2021 Photo-lessons.</p>
         </div>
-        <div class="wrapper__row">
-            <fieldset class="footer__fieldset">
-                <label>
-                    <input class="footer__input" placeholder="Ваша почта">
-                </label>
-            </fieldset>
-            <button class="footer__button">Записаться!</button>
-        </div>
-        <p class="footer__author">2021 Photo-lessons.</p>
     </footer>
 <script src="./index.js"></script>
 </body>

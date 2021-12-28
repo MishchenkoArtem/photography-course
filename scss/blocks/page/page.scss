@@ -1,0 +1,20 @@
+.page {
+    font-family: "Roboto", "Arial", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+
+    &__section {
+        max-width: 1340px;
+        box-sizing: border-box;
+        padding: 0 50px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            padding: 0 40px;
+        }
+
+        @media (max-width: 670px) {
+            padding: 0 20px;
+        }
+    }
+}
