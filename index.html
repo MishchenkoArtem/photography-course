@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +14,9 @@
             <a class="header__button"></a>
             <nav>
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#">Композиция</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Камера</a></li>
-                    <li class="header__item"><a class="header__link" href="#">Поиск заказов</a></li>
+                    <li class="header__item"><a href="#composition" class="header__link">Композиция</a></li>
+                    <li class="header__item"><a href="#camera" class="header__link">Камера</a></li>
+                    <li class="header__item"><a href="#search-orders" class="header__link">Поиск заказов</a></li>
                 </ul>
             </nav>
         </section>
@@ -24,12 +24,12 @@
             <div class="header__image header__image_type_active"></div>
             <nav>
                 <ul class="header__list-active">
-                    <li class="header__item-active"><a class="header__link" href="#">Композиция</a></li>
-                    <li class="header__item-active"><a class="header__link" href="#">Камера</a></li>
-                    <li class="header__item-active"><a class="header__link" href="#">Поиск заказов</a></li>
+                    <li class="header__item-active"><a href="#composition" class="header__link">Композиция</a></li>
+                    <li class="header__item-active"><a href="#camera" class="header__link">Камера</a></li>
+                    <li class="header__item-active"><a href="#search-orders" class="header__link">Поиск заказов</a></li>
                 </ul>
             </nav>
-            <div class="header__button-close"></div>
+            <button type="button" class="header__button-close"></button>
         </section>
     </header>
     <main>
@@ -39,7 +39,7 @@
             <p class="photograph__text">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
             <a href="#" class="photograph__button">Подробнее</a>
         </section>
-        <section class="composition">
+        <section class="composition" id="composition">
             <div class="composition__wrapper page__section">
                 <h2 class="composition__heading">Композиция</h2>
                 <h3 class="composition__title">Изучите композицию</h3>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <section class="camera">
+        <section class="camera" id="camera">
             <div class="camera__wrapper page__section">
                 <h2 class="camera__heading">камера</h2>
                 <h3 class="camera__title">Настройка Съемка Обработка</h3>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="search-orders">
+        <section class="search-orders" id="search-orders">
             <div class="search-orders__wrapper page__section">
                 <h2 class="search-orders__heading">поиск заказов</h2>
                 <h3 class="search-orders__title">Научим находить заказы!</h3>

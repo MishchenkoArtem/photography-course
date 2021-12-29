@@ -8,3 +8,8 @@
 @import "../scss/blocks/camera/camera.scss";
 @import "../scss/blocks/search-orders/search-orders.scss";
 @import "../scss/blocks/footer/footer.scss";
+
+.scroll-box {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

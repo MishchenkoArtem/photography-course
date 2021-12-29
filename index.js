@@ -1,8 +1,5 @@
-
-
 const menuActive = document.querySelector('.header__menu-active');
 const menuMain = document.querySelector('.header__menu-main');
-
 
 function openMenuMain () {
     menuActive.classList.add('header__menu-active_type_active');
@@ -21,3 +18,8 @@ document.querySelector('.header__button').addEventListener('click', () => {
 document.querySelector('.header__button-close').addEventListener('click', () => {
     closeMenuMain();
 })
+
+document.querySelector('.footer__button').addEventListener('click', (event) => {
+    event.preventDefault();
+    const button = document.querySelector('.footer__button').textContent = 'Спасибо!';
+});

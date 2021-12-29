@@ -142,6 +142,7 @@
 
     &__link:hover {
         font-weight: 700;
+        cursor: pointer;
     }
 
     &__button {
@@ -179,5 +180,9 @@
             grid-row-start: 1;
             grid-row-end: 2;
         }
+    }
+
+    &__button-close:hover {
+        cursor: pointer;
     }
 }
