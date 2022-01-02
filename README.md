@@ -8,7 +8,7 @@
 * Помощь в поиске заказов
 
 
-##Технологии которые я применил в проекте
+## Технологии которые я применил в проекте
 
 * Flexbox
 * CSS Grid Layout
@@ -16,4 +16,4 @@
 * Переменные $variables
 * Миксины @mixin => @include
 
-Ссылка на проект. [GitHub Photography Course](https://github.com/MishchenkoArtem/photography-course) 
+Ссылка на проект. [GitHub Photography Course](https://mishchenkoartem.github.io/photography-course/) 
