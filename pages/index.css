@@ -18,19 +18,20 @@
   margin: 0 auto;
   padding: 0;
 }
-.page__section {
+
+.page-section {
   max-width: 1340px;
   box-sizing: border-box;
   padding: 0 50px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .page__section {
+  .page-section {
     padding: 0 40px;
   }
 }
 @media (max-width: 670px) {
-  .page__section {
+  .page-section {
     padding: 0 20px;
   }
 }
@@ -103,7 +104,16 @@
   }
 }
 .header__image:hover {
-  animation: turn-arrow 6s infinite cubic-bezier(0.32, 0.62, 0.62, 0.39);
+  -webkit-animation: turn-arrow 6s infinite cubic-bezier(0.32, 0.62, 0.62, 0.39);
+          animation: turn-arrow 6s infinite cubic-bezier(0.32, 0.62, 0.62, 0.39);
+}
+@-webkit-keyframes turn-arrow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes turn-arrow {
   from {
@@ -1059,6 +1069,26 @@
     min-height: 50px;
   }
 }
+.footer__input::-moz-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  color: #000;
+  padding-left: 20px;
+}
+.footer__input:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.375px;
+  color: #000;
+  padding-left: 20px;
+}
 .footer__input::placeholder {
   font-family: Roboto;
   font-style: normal;
@@ -1070,6 +1100,12 @@
   padding-left: 20px;
 }
 @media (max-width: 670px) {
+  .footer__input::-moz-placeholder {
+    font-size: 11px;
+  }
+  .footer__input:-ms-input-placeholder {
+    font-size: 11px;
+  }
   .footer__input::placeholder {
     font-size: 11px;
   }
@@ -1123,11 +1159,4 @@
     line-height: 24px;
     margin: 0 0 20px;
   }
-}
-
-.scroll-box {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

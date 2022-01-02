@@ -2,14 +2,10 @@
 @import "../scss/mixin.scss";
 @import "../vendor/fonts/fonts.scss";
 @import "../scss/blocks/page/page.scss";
+@import "../scss/blocks/page-section/page-section.scss";
 @import "../scss/blocks/header/header.scss";
 @import "../scss/blocks/photograph/photograph.scss";
 @import "../scss/blocks/composition/composition.scss";
 @import "../scss/blocks/camera/camera.scss";
 @import "../scss/blocks/search-orders/search-orders.scss";
 @import "../scss/blocks/footer/footer.scss";
-
-.scroll-box {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
