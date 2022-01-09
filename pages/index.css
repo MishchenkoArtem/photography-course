@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
-  src: url("../../vendor/fonts/roboto-400.woff2") format("woff2");
+  src: url("../vendor/fonts/roboto-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 500;
-  src: url("../../vendor/fonts/roboto-500.woff2") format("woff2");
+  src: url("../vendor/fonts/roboto-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 700;
-  src: url("../../vendor/fonts/roboto-700.woff2") format("woff2");
+  src: url("../vendor/fonts/roboto-700.woff2") format("woff2");
 }
 .page {
   font-family: "Roboto", "Arial", sans-serif;
@@ -72,7 +72,7 @@
   display: grid;
 }
 .header__image {
-  background-image: url("../../../images/header-img.svg");
+  background-image: url("../images/header-img.svg");
   background-size: cover;
   box-sizing: border-box;
   cursor: pointer;
@@ -193,7 +193,7 @@
   cursor: pointer;
 }
 .header__button {
-  background-image: url("../../../images/burger.svg");
+  background-image: url("../images/burger.svg");
   background-size: cover;
   background-color: transparent;
   box-sizing: border-box;
@@ -214,7 +214,7 @@
   }
 }
 .header__button-close {
-  background-image: url("../../../images/button-close.svg");
+  background-image: url("../images/button-close.svg");
   background-size: cover;
   background-color: transparent;
   box-sizing: border-box;
@@ -991,7 +991,7 @@
   display: flex;
 }
 .footer__image {
-  background-image: url("../../../images/arrow.svg");
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   min-width: 129px;
   min-height: 95px;
