@@ -36,7 +36,7 @@
     }
     
     &__image {
-        background-image: url("../images/header-img.svg");
+        background-image: url("./images/header-img.svg");
         background-size: cover;
         box-sizing: border-box;
         cursor: pointer;
@@ -134,7 +134,11 @@
     }
 
     &__link {
-        @include fonts (Roboto, normal, 400, 16px, 24px);
+        font-family: $fontFamily;
+        font-style: $fontStyle;
+        font-weight: $fontWeight;
+        font-size: $fontSize;
+        line-height: $fontLine;
         color: #FBFBFB;
         text-decoration: none;
         margin: 0;
@@ -166,7 +170,7 @@
     }
 
     &__button-close {
-        background-image: url("../images/button-close.svg");
+        background-image: url("./images/button-close.svg");
         background-size: cover;
         background-color: transparent;
         box-sizing: border-box;
