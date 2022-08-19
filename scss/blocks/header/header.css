@@ -34,7 +34,7 @@
   display: grid;
 }
 .header__image {
-  background-image: url("./images/header-img.svg");
+  background-image: url("../images/header-img.svg");
   background-size: cover;
   box-sizing: border-box;
   cursor: pointer;
